@@ -97,11 +97,3 @@ python train.py \
   year      = {2026}
 }
 ```
-
-## License
-
-This project is released under the MIT License (see [LICENSE](LICENSE)) for **research purposes only**. The code is provided as-is and may change without notice.
-
-## Acknowledgements
-
-Supported by NSFC (62302093, 62306292, 52441503), Jiangsu Natural Science Fund (BK20230833), and the Open Research Fund of the State Key Laboratory of Multimodal Artificial Intelligence Systems. We thank the Big Data Computing Center of Southeast University for computational support.
