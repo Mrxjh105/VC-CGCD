@@ -1,4 +1,4 @@
-# VC-CGCD: Virtual Category-Guided Continual Generalized Category Discovery
+# [Virtual Category-Guided Continual Generalized Category Discovery](https://arxiv.org/html/2607.04984v1)
 
 Official PyTorch implementation of **"Virtual Category-Guided Continual Generalized Category Discovery"** (ECCV 2026).
 
