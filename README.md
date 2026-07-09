@@ -1,4 +1,4 @@
-# VC-CGCD: Virtual Category-Guided Continual Generalized Category Discovery
+# [Virtual Category-Guided Continual Generalized Category Discovery](https://arxiv.org/abs/2607.04984)
 
 A PyTorch implementation for continual learning with novel class discovery, combining visual concepts (VC) with contrastive learning and knowledge distillation.
 
