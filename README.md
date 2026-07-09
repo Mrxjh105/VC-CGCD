@@ -6,6 +6,9 @@ Official PyTorch implementation of **"Virtual Category-Guided Continual Generali
 > \*Corresponding authors  
 > Southeast University · Communication University of China
 
+<img width="793" height="243" alt="image" src="https://github.com/user-attachments/assets/9befd892-cb81-42ac-bab5-8b8278e49936" />
+
+
 ## Overview
 
 VC-CGCD addresses **Continual Generalized Category Discovery (C-GCD)**: incrementally discovering novel categories from sequential unlabeled sessions while retaining previously learned ones, without storing past data. The framework introduces **Virtual Category Learning (VCL)** to handle ambiguous unlabeled samples via temporary virtual categories, and **Expanded Neighborhood Contrastive Learning (ENCL)** to improve feature separation through neighbors-of-neighbors mining.
