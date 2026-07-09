@@ -1,4 +1,4 @@
-# [Virtual Category-Guided Continual Generalized Category Discovery](https://arxiv.org/html/2607.04984v1)
+# VC-CGCD: Virtual Category-Guided Continual Generalized Category Discovery
 
 Official PyTorch implementation of **"Virtual Category-Guided Continual Generalized Category Discovery"** (ECCV 2026).
 
@@ -6,12 +6,9 @@ Official PyTorch implementation of **"Virtual Category-Guided Continual Generali
 > \*Corresponding authors  
 > Southeast University · Communication University of China
 
-<img width="793" height="243" alt="image" src="https://github.com/user-attachments/assets/9befd892-cb81-42ac-bab5-8b8278e49936" />
-
-
 ## Overview
 
-VC-CGCD addresses **Continual Generalized Category Discovery (C-GCD)**: incrementally discovering novel categories from sequential unlabeled sessions while retaining previously learned ones, without storing past data. The framework introduces **Virtual Category Learning (VCL)** to handle ambiguous unlabeled samples via temporary virtual categories, and **Expanded Neighborhood Contrastive Learning (ENCL)** to improve feature separation through neighbors-of-neighbors mining.
+Continual Generalized Category Discovery (C-GCD) aims to incrementally identify novel categories from sequential unlabeled data while preserving recognition of known classes, which is an essential capability for open-world visual learning. A major bottleneck lies in ambiguous unlabeled samples that cannot be confidently assigned to known classes nor reliably grouped as novel ones, making pseudo-labeling brittle and often biasing learning toward familiar categories. In this work, we introduce Virtual Category-Guided Continual Generalized Category Discovery by adapting Virtual Category Learning (VCL) to the continual setting. Our method identifies uncertain samples and assigns them to temporary virtual categories, enabling safe and informative learning from unlabeled streams without injecting noisy labels, while improving unlabeled data utilization and mitigating prediction bias. To further stabilize discovery across sessions and enhance class separation, we augment VCL with Expanded Neighborhood Contrastive Learning (ENCL), which exploits extended neighborhood relations and an adaptive margin to learn more discriminative and well-separated representations for both old and emerging classes. Extensive experiments on CIFAR-100, Tiny ImageNet, and ImageNet-100 demonstrate that our approach consistently outperforms state-of-the-art methods, establishing a scalable and effective solution for C-GCD.
 
 ## Project Structure
 
@@ -37,6 +34,12 @@ pip install -r requirements.txt
 ```
 
 Python 3.8+ · PyTorch 1.10 · CUDA-enabled GPU (RTX 4090D used in the paper).
+
+## Datasets
+
+- **CIFAR-100**: A 100-class image classification dataset with 600 images per class.
+- **Tiny-ImageNet**: A scaled-down version of ImageNet containing 200 classes with 500 images each.
+- **ImageNet-100**: A subset of ImageNet with 100 classes and 1200 images per class.
 
 ## Training
 
@@ -100,3 +103,11 @@ python train.py \
   year      = {2026}
 }
 ```
+
+## License
+
+This project is released under the MIT License (see [LICENSE](LICENSE)) for **research purposes only**. The code is provided as-is and may change without notice.
+
+## Acknowledgements
+
+Supported by NSFC (62302093, 62306292, 52441503), Jiangsu Natural Science Fund (BK20230833), and the Open Research Fund of the State Key Laboratory of Multimodal Artificial Intelligence Systems. We thank the Big Data Computing Center of Southeast University for computational support.
