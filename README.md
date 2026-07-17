@@ -106,7 +106,3 @@ python train.py \
   year      = {2026}
 }
 ```
-
-## License
-
-This project is released under the MIT License (see [LICENSE](LICENSE)) for **research purposes only**. The code is provided as-is and may change without notice.
